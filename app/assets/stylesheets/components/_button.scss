@@ -1,0 +1,72 @@
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--primary) 0%, #764ba2 100%);
+  color: white;
+  box-shadow:
+    0 4px 12px rgba(102, 126, 234, 0.4),
+    0 2px 4px rgba(102, 126, 234, 0.2);
+}
+
+.btn--primary:hover {
+  box-shadow:
+    0 8px 20px rgba(102, 126, 234, 0.5),
+    0 4px 8px rgba(102, 126, 234, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn--secondary {
+  background: var(--secondary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+.btn--secondary:hover {
+  background: var(--secondary-dark);
+  box-shadow: 0 8px 20px rgba(72, 187, 120, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn--light {
+  background: var(--gray-50);
+  color: var(--gray-700);
+  border: 2px solid var(--gray-200);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn--light:hover {
+  background: white;
+  border-color: var(--gray-300);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn--danger {
+  background: var(--danger);
+  color: white;
+  box-shadow: 0 4px 12px rgba(245, 101, 101, 0.3);
+}
+
+.btn--danger:hover {
+  background: var(--danger-dark);
+  box-shadow: 0 8px 20px rgba(245, 101, 101, 0.4);
+  transform: translateY(-2px);
+}

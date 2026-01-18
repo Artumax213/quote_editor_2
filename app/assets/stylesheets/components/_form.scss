@@ -1,0 +1,94 @@
+/* Formularios */
+.form {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--gray-700);
+  font-size: 15px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="date"],
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid var(--gray-200);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  background: var(--gray-50);
+  color: var(--gray-900);
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Mensajes de error */
+.error-message {
+  background: #fee;
+  color: #c00;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border-left: 4px solid var(--danger);
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(245, 101, 101, 0.1);
+}
+
+/* Flash messages */
+.notice,
+.alert {
+  padding: 18px 24px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.notice {
+  background: #d1fae5;
+  color: #065f46;
+  border-left: 4px solid var(--secondary);
+}
+
+.alert {
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid var(--danger);
+}
